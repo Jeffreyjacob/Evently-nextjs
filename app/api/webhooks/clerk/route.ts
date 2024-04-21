@@ -68,12 +68,14 @@ export async function POST(req: Request) {
         photo:image_url
      }
 
+     console.log(user)
+
      const newUser = await createUser(user);
 
      if(newUser){
         await clerkClient.users.updateUserMetadata(id,{
             publicMetadata:{
-                userId:newUser._id
+                userId:newUser._id,
             }
         })
      }
@@ -102,6 +104,8 @@ export async function POST(req: Request) {
 
      return NextResponse.json({message:'Ok',user:deletedUser})
   }
+
+  console.log(`webhook with and Id of ${id} and type of ${eventType}`)
  
   return new Response('', { status: 200 })
 }
