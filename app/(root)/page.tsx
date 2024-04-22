@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from '@/public/images/hero.png';
+import heroImage from '@/public/assets/images/hero.png';
 
 export default function Home() {
   return (

@@ -8,8 +8,8 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import Image from 'next/image';
-import menuIcon from '@/public/icons/menu.svg';
-import Logo from '@/public/images/logo.svg';
+import menuIcon from '@/public/assets/icons/menu.svg';
+import Logo from '@/public/assets/images/logo.svg';
 import { Separator } from "@/components/ui/separator"
 import Navitem from './Navitem';
 

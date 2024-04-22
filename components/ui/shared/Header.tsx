@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
-import logoimage from '@/public/images/logo.svg';
+import logoimage from '@/public/assets/images/logo.svg';
 import {  SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { Button } from '../ui/button';
 import Navitem from './Navitem';
